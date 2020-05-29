@@ -2,7 +2,18 @@
 <html> <link rel="stylesheet" href="styles.css">
 	<head>
 		<title>Portfolio</title>
+		<script>
+			function alert();
+				const element = document.querySelector('#element')
+				const topPos = element.getBoundingClientRect().top
+
+				window.scroll({
+					top: topPos,
+			  		behavior: 'smooth'
+				});
+		</script>
 	</head>
+
 	<body>
 		<div class="open">
 			<div class="layer"></div>
@@ -17,8 +28,8 @@
 				</div>
 			<ul class="main-navi">
 				<li class="active"><a href="#">Start</a></li>
-				<li class="button1"><a href="#">Portfolio</a></li>
-                <li class="button2"><a href="#">Contact</a></li>
+				<li class="button1"><a href="#portfolio_start">Portfolio</a></li>
+                <li class="button2"><a href="#contactMe">Contact</a></li>
 			</ul>
 			</div>
 
@@ -27,12 +38,9 @@
 			<p> <br>Interaction Design Student
 				<br>BA Fashion And Textile Management
 				<br>Styling Assistant</p>
-				<div class="button">
-					<a href="#">View Portfolio</a>
-				</div>
 			</div>
 
-			<div class="image2">
+			<div class="image2" id="portfolio_start">
 				<img src="billie.jpg">
 			</div>
 			<div class="image3">
@@ -41,10 +49,17 @@
 			<div class="image4">
 				<img src="billie2.jpg">
 			</div>
+			<div class="image5">
+				<img src="stefanie.jpg">
+			</div>
+	
 
-			<div class="contact">
+			<div class="contact" id="contactMe">
 				<p> <br>For questions or inquiries please send me a mail:
-					<br>marlene.wilkens@code.berlin
+					<br><a href="mailto:marlene.wilkens@code.berlin">marlene.wilkens@code.berlin</a>  
+					<br>
+					<br>
+					<br>
 			</div>
 
 		</header>
